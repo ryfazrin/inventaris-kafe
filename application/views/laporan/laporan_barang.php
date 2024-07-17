@@ -13,7 +13,6 @@
                           <th scope="col">Nama Barang</th>
                           <th scope="col">Jumlah Masuk</th>
                           <th scope="col">Jumlah Keluar</th>
-                          <th scope="col">Jumlah Dipinjam</th>
                           <th scope="col">Sisa Stok</th>
                         </tr>
                       </thead>
@@ -26,7 +25,6 @@
                             <td class="text-uppercase"><?= $data->nama_barang; ?></td>
                             <td><?= $data->jml_masuk; ?></td>
                             <td><?= $data->jml_keluar; ?></td>
-                            <td><?= $data->jml_pinjam; ?></td>
                             <td><?= $data->sisa_stok; ?></td>
                           </tr>
                         <?php endforeach ?>

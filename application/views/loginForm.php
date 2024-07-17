@@ -16,16 +16,7 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/css/components.css')?>">
-<!-- Start GA -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-94034622-3');
-</script>
-<!-- /END GA --></head>
+</head>
 
 <body>
   <div id="app">
@@ -67,12 +58,6 @@
                   </div>
 
                   <div class="form-group">
-                    <div class="text-small text-center">
-                      <a href="<?php echo base_url('login/lupaPass') ?>">Lupa Password?</a>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                       Login
                     </button>
@@ -81,11 +66,11 @@
 
               </div>
             </div>
-            <div class="mt-5 text-muted text-center">
+            <!-- <div class="mt-5 text-muted text-center">
               Belum Punya Akun? <a href="#">Contact Admin</a>
-            </div>
+            </div> -->
             <div class="simple-footer">
-              Copyright &copy; By <a href="https://ryfazrin.github.io/">Ryfazrin</a> 2019
+              Copyright &copy; 2024 <div class="bullet"></div> By Kafe Kopi Kampung Ambarukmo Yogyakarta
             </div>
           </div>
 

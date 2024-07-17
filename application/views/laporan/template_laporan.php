@@ -57,7 +57,7 @@
               Cetak LAPORAN by <span class="text-primary">@<?= $this->session->userdata('username'); ?></span>
             </div>
             <div class="simple-footer">
-              Copyright &copy; <span class="text-primary">App INVENTARIS RPL</span> 2019
+              Copyright &copy; <span class="text-primary">App INVENTARIS</span> 2024
             </div>
           </div>
         </div>

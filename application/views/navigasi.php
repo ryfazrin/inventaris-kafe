@@ -28,7 +28,7 @@
             <?php endif; ?>
 
             <?php if ($level->level == 'manajemen'): ?>
-              <li><a class="nav-link" href="<?php echo site_url('laporan/'); ?>"><i class="fas fa-file"></i> <span>Cetak Laporan</span></a></li>
+              <!-- <li><a class="nav-link" href="<?php echo site_url('laporan/'); ?>"><i class="fas fa-file"></i> <span>Cetak Laporan</span></a></li> -->
               <li class="menu-header"><b>Manajemen</b> Barang</li>
               <li><a href="<?php echo site_url('barang/'); ?>" class="nav-link"><i class="fas fa-user"></i><span>Data Barang</span></a></li>
               <li><a class="nav-link" href="<?php echo site_url('barang_masuk/'); ?>"><i class="fas fa-download"></i> <span>Barang Masuk</span></a></li>
