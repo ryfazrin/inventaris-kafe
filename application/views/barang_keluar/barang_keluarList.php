@@ -21,8 +21,7 @@
                             <th class="text-center">No</th>
                             <th>Nama Barang</th>
                             <th>Jumlah Keluar</th>
-                            <th>Penerima</th>
-                            <th>Lokasi</th>
+                            <th>deskripsi</th>
                             <th>Tanggal Keluar</th>
                             <th>action</th>
                           </tr>
@@ -42,8 +41,7 @@
                                 </div>
                             </td>
                             <td><div class="badge badge-light"><?= $data->jml_keluar; ?></div></td>
-                            <td><?= $data->penerima; ?></td>
-                            <td><?= $data->lokasi; ?></td>
+                            <td><?= $data->deskripsi; ?></td>
                             <td><div class="badge badge-light"><?= nice_date($data->tgl_keluar, 'd-m-Y'); ?></div></td>
                             <td>
                                <a href="<?php echo site_url('barang_keluar/ubah/'.$data->id_keluar);?>" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>

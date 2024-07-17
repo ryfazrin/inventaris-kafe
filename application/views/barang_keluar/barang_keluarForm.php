@@ -32,7 +32,7 @@
                         }
                        ?>
                       </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                       <div class="form-group">
                         <label>Nama Barang</label>
                         <select class="form-control select2 text-capitalize" name="id_barang">
@@ -52,14 +52,10 @@
                         <input name="jml_keluar" type="number" class="form-control" value="<?= isset($barang_keluarId->jml_keluar)?$barang_keluarId->jml_keluar:''; ?>">
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label>Penerima</label>
-                        <input name="penerima" type="text" class="form-control" value="<?= isset($barang_keluarId->penerima)?$barang_keluarId->penerima:''; ?>">
-                      </div>
-                      <div class="form-group">
-                        <label>Lokasi</label>
-                        <textarea class="form-control" name="lokasi"><?= isset($barang_keluarId->lokasi)?$barang_keluarId->lokasi:''; ?></textarea>
+                        <label>deskripsi</label>
+                        <textarea class="form-control" name="deskripsi"><?= isset($barang_keluarId->deskripsi)?$barang_keluarId->deskripsi:''; ?></textarea>
                       </div>
                     <div class="form-group text-right">
                       <button class="btn btn-info mr-1" type="submit">Simpan</button>

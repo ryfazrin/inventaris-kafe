@@ -37,8 +37,7 @@
 				'id_barang'  => $this->input->post('id_barang'), 
 				'tgl_keluar' => $dateNow, 
 				'jml_keluar' => $this->input->post('jml_keluar'), 
-				'lokasi'     => $this->input->post('lokasi'), 
-				'penerima'   => $this->input->post('penerima'), 
+				'deskripsi'     => $this->input->post('deskripsi'),
 			);
 
 			$this->db->insert('barang_keluar', $data);
@@ -50,8 +49,7 @@
 			$data = array(
 				'id_barang'  => $this->input->post('id_barang'),  
 				'jml_keluar' => $this->input->post('jml_keluar'), 
-				'lokasi'     => $this->input->post('lokasi'), 
-				'penerima'   => $this->input->post('penerima'), 
+				'deskripsi'     => $this->input->post('deskripsi'),
 			);
 
 			$this->db->where('id_keluar', $id);
