@@ -28,12 +28,12 @@
   	                      <label>Jumlah Masuk</label>
   	                      <p><?= $data->jml_masuk ?></p>
   	                    </div>
+                      </div>
+                      <div class="col-sm-6">
                         <div class="form-group">
                           <label>Tanggal Masuk</label>
                           <p><?= nice_date($data->tgl_masuk, 'd-m-Y') ?></p>
                         </div>
-                      </div>
-                      <div class="col-sm-6">
                         <div class="form-group">
                           <label>Kondisi</label>
                           <p><?= $data->kondisi ?></p>
