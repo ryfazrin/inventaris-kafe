@@ -50,7 +50,7 @@
 	            </article>
 	          </div>
 
-	          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+	          <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-4">
 	            <article class="article">
 	              <div class="article-details">
 	                <div class="article-cta">
@@ -59,7 +59,7 @@
 	                </div>
 	              </div>
 	            </article>
-	          </div>
+	          </div> -->
           </div>
         </section>
       </div>

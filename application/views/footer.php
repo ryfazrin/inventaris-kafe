@@ -1,6 +1,6 @@
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2019 <div class="bullet"></div> By <a href="https://ryfazrin.github.io/">Ryfazrin</a> SMK Negeri 1 Kotabaru
+          Copyright &copy; 2024 <div class="bullet"></div> By Kafe Kopi Kampung Ambarukmo Yogyakarta
         </div>
         <div class="footer-right">
 
