@@ -7,7 +7,7 @@
 
         <?php if ($level->level == 'administrator'): ?>
           <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
               <div class="card card-statistic-1">
                 <div class="card-icon bg-danger">
                   <i class="far fa-user"></i>
@@ -20,7 +20,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
               <div class="card card-statistic-1">
                 <div class="card-icon bg-success">
                   <i class="fas fa-archive"></i>
@@ -39,7 +39,7 @@
           </div>
         <?php elseif ($level->level == 'manajemen'): ?>
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-12">
               <div class="card card-statistic-1">
                 <div class="card-icon bg-success">
                   <i class="fas fa-archive"></i>
@@ -56,18 +56,7 @@
               <a href="<?php echo site_url('barang/tambahbarang/'); ?>"><button class="col-12 btn btn-lg btn-info mb-2" type="submit"><i class="fas fa-plus"></i> Barang Baru</button></a>
             </div>
           </div>
-        <?php elseif ($level->level == 'peminjam'): ?>
-          <a href="<?php echo site_url('pinjam_barang/tambahPinjam_barang/'); ?>"><button class="col-12 btn btn-lg btn-info mb-2" type="submit"><i class="fas fa-plus"></i> Pinjam Barang Baru</button></a>
         <?php endif; ?>
-        <?php
-          foreach ($jatuh_tempo as $data) {
-            // echo $data->nama_barang." ";
-            // echo $data->tgl_kembali." ";
-        ?>
-            <div class="alert alert-danger">Barang dengan nama <?= $data->nama_barang ?>, tanggal kembali <?= $data->tgl_kembali ?>,  sebanyak <?= $data->jml_barang ?> barang, harus segera dikembalikan</div>
-        <?php
-          }
-         ?>
           <div class="section-body">
             <div class="row">
                 <div class="col-12">
@@ -84,7 +73,6 @@
                             <th>Nama Barang</th>
                             <th>Jumlah Masuk</th>
                             <th>Jumlah Keluar</th>
-                            <th>Di Pinjam</th>
                             <th>Stok Barang</th>
                           </tr>
                         </thead>
@@ -101,7 +89,6 @@
                             </td>
                             <td><?= $data->jml_masuk; ?></td>
                             <td><?= $data->jml_keluar; ?></td>
-                            <td><?= $data->jml_pinjam; ?></td>
                             <td><div class="badge badge-primary"><?= $data->sisa_stok; ?></div></td>
                           </tr>
                         <?php

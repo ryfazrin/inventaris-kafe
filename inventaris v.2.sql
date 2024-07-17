@@ -221,7 +221,6 @@ CREATE TABLE `stok` (
 ,`nama_barang` varchar(255)
 ,`jml_masuk` decimal(32,0)
 ,`jml_keluar` decimal(32,0)
-,`jml_pinjam` decimal(32,0)
 ,`sisa_stok` decimal(34,0)
 );
 

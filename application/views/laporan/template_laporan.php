@@ -47,8 +47,6 @@
                 $this->load->view('laporan/laporan_barang_masuk');
               } else if (isset($barang_keluar)) {
                 $this->load->view('laporan/laporan_barang_keluar');
-              } else if (isset($pinjam_barang)) {
-                $this->load->view('laporan/laporan_pinjam_barang');
               } else {
                 echo "<div class='alert alert-danger text-center'><strong>data tidak ditemukan</strong></div>";
               }

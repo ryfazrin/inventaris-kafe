@@ -11,8 +11,7 @@
                           <th scope="col">No</th>
                           <th scope="col">Nama barang</th>
                           <th scope="col">Jumlah Keluar</th>
-                          <th scope="col">Penerima</th>
-                          <th scope="col">Lokasi</th>
+                          <th scope="col">deskripsi</th>
                           <th scope="col">Tanggal Keluar</th>
                         </tr>
                       </thead>
@@ -24,8 +23,7 @@
                             <td scope="row"><?= $no++; ?></td>
                             <td class="text-capitalize"><?= $data->nama_barang; ?></td>
                             <td><?= $data->jml_keluar; ?></td>
-                            <td><?= $data->penerima; ?></td>
-                            <td><?= $data->lokasi; ?></td>
+                            <td><?= $data->deskripsi; ?></td>
                             <td><?= nice_date($data->tgl_keluar, 'd-m-Y'); ?></td>
                           </tr>
                         <?php endforeach ?>

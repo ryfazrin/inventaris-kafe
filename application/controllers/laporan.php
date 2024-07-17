@@ -14,8 +14,6 @@ class Laporan extends CI_Controller {
 		$this->load->model('barang_masuk_model');
 		// load barang_masuk model
 		$this->load->model('barang_keluar_model');
-		// load barang_masuk model
-		$this->load->model('pinjam_barang_model');
 		// load login model
 		$this->load->model('login_model');
 	}
@@ -47,12 +45,6 @@ class Laporan extends CI_Controller {
 	public function barang_keluar()
 	{
 		$data['barang_keluar'] = $this->barang_keluar_model->getData();
-		$this->load->view('laporan/template_laporan', $data);
-	}
-
-	public function pinjam_barang()
-	{
-		$data['pinjam_barang'] = $this->pinjam_barang_model->getData();
 		$this->load->view('laporan/template_laporan', $data);
 	}
 }

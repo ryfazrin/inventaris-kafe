@@ -38,7 +38,6 @@
                           <?php if (isset($userId->level)): ?>
                             <option value="<?= isset($userId->level)?$userId->level:''; ?>"><?= isset($userId->level)?$userId->level:''; ?></option>
                           <?php endif ?>
-	                        <option value="peminjam">peminjam</option>
 	                        <option value="manajemen">manajemen</option>
 	                        <option value="administrator">administrator</option>
 	                      </select>
