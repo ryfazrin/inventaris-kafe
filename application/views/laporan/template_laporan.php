@@ -43,8 +43,6 @@
               <?php
               if (isset($barang)) {
                 $this->load->view('laporan/laporan_barang');
-              } else if (isset($suplier)) {
-                $this->load->view('laporan/laporan_suplier');
               } else if (isset($barang_masuk)) {
                 $this->load->view('laporan/laporan_barang_masuk');
               } else if (isset($barang_keluar)) {

@@ -22,7 +22,6 @@ class Welcome extends CI_Controller {
 
 		$data['users'] = $this->welcome_model->user_rows();
 		$data['barangs'] = $this->welcome_model->barang_rows();
-		$data['supliers'] = $this->welcome_model->suplier_rows();
 
 		$data['jatuh_tempo'] = $this->welcome_model->jatuh_tempo_pinjam($uname);
 		$data['stoks'] = $this->welcome_model->getDataStok();

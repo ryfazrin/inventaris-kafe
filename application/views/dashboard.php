@@ -33,19 +33,6 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <div class="card-icon bg-warning">
-                  <i class="fas fa-truck"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>Total Suplier</h4>
-                  </div>
-                  <div class="card-body"><?= $supliers; ?></div>
-                </div>
-              </div>
-            </div>
             <div class="col-12">
               <a href="<?php echo site_url('barang/tambahbarang/'); ?>"><button class="col-12 btn btn-lg btn-info mb-2" type="submit"><i class="fas fa-plus"></i> Barang Baru</button></a>
             </div>
@@ -62,19 +49,6 @@
                     <h4>Total Data Barang</h4>
                   </div>
                   <div class="card-body"><?= $barangs; ?></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <div class="card-icon bg-warning">
-                  <i class="fas fa-truck"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>Total Suplier</h4>
-                  </div>
-                  <div class="card-body"><?= $supliers; ?></div>
                 </div>
               </div>
             </div>

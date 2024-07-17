@@ -25,12 +25,6 @@
 			return $query->num_rows();
 		}
 
-		function suplier_rows()
-		{
-			$query = $this->db->get('suplier');
-			return $query->num_rows();
-		}
-
 		function jatuh_tempo_pinjam($username)
 		{
 

@@ -32,7 +32,7 @@
                         }
                        ?>
                       </div>
-                      <div class="col-lg-6">
+                      <div class="col-lg-12">
                       <div class="form-group">
                         <label>Nama Barang</label>
                         <select class="form-control select2 text-capitalize" name="id_barang">
@@ -59,31 +59,10 @@
                         <textarea class="form-control" name="spesifikasi"><?= isset($barang_masukId->spesifikasi)?$barang_masukId->spesifikasi:''; ?></textarea>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label>Suplier</label>
-                        <select class="form-control select2 text-capitalize" name="id_suplier">
-                        <?php if (isset($barang_masukId->nama_suplier)): ?>
-                            <option value="<?= $barang_masukId->id_suplier; ?>"><?= $barang_masukId->nama_suplier; ?></option>
-                            <option disabled>-</option>
-                          <?php endif ?>
-
-                          <?php foreach ($nama_suplier as $data): ?>
-                            <option value="<?= isset($data->id_suplier)?$data->id_suplier:''; ?>"><?= isset($data->nama_suplier)?$data->nama_suplier:''; ?></option>
-                          <?php endforeach ?>
-                        </select>
-                      </div>
-	                    <div class="form-group">
-	                      <label>Lokasi</label>
-	                      <input name="lokasi" type="text" class="form-control" value="<?= isset($barang_masukId->lokasi)?$barang_masukId->lokasi:''; ?>">
-	                    </div>
+                    <div class="col-lg-12">
 	                    <div class="form-group">
 	                      <label>Kondisi</label>
 	                      <input name="kondisi" type="text" class="form-control" value="<?= isset($barang_masukId->kondisi)?$barang_masukId->kondisi:''; ?>">
-	                    </div>
-	                    <div class="form-group">
-	                      <label>Sumber Dana</label>
-	                      <input name="sumber_dana" type="text" class="form-control" value="<?= isset($barang_masukId->sumber_dana)?$barang_masukId->sumber_dana:''; ?>">
 	                    </div>
                     <div class="form-group text-right">
                       <button class="btn btn-info mr-1" type="submit">Simpan</button>

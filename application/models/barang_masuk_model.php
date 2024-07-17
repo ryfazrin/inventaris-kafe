@@ -16,7 +16,6 @@
 			$this->db->select('*');
 			$this->db->from('barang_masuk');
 			$this->db->join('barang', 'barang_masuk.id_barang = barang.id_barang');
-			$this->db->join('suplier', 'barang_masuk.id_suplier = suplier.id_suplier');
 			$this->db->order_by('id_masuk', 'DESC');
 			$query = $this->db->get();
 			return $query->result();
@@ -27,7 +26,6 @@
 			$this->db->select('*');
 			$this->db->from('barang_masuk');
 			$this->db->join('barang', 'barang_masuk.id_barang = barang.id_barang');
-			$this->db->join('suplier', 'barang_masuk.id_suplier = suplier.id_suplier');
 			$this->db->where('barang_masuk.id_masuk', $id);
 			return $this->db->get()->row();
 		}
@@ -37,7 +35,6 @@
 			$this->db->select('*');
 			$this->db->from('barang_masuk');
 			$this->db->join('barang', 'barang_masuk.id_barang = barang.id_barang');
-			$this->db->join('suplier', 'barang_masuk.id_suplier = suplier.id_suplier');
 			$this->db->where('barang_masuk.id_masuk', $id);
 			return $this->db->get()->row();
 		}
@@ -48,12 +45,9 @@
 
 			$data = array(
 				"id_barang"   => $this->input->post('id_barang'),
-				"id_suplier"  => $this->input->post('id_suplier'),
 				"tgl_masuk"   => $dateNow,
 				"spesifikasi"   => $this->input->post('spesifikasi'),
-				"lokasi"   => $this->input->post('lokasi'),
 				"kondisi"   => $this->input->post('kondisi'),
-				"sumber_dana"   => $this->input->post('sumber_dana'),
 				"jml_masuk"   => $this->input->post('jml_masuk'),
 			);
 
@@ -65,11 +59,8 @@
 		{
 			$data = array(
 				"id_barang"   => $this->input->post('id_barang'),
-				"id_suplier"  => $this->input->post('id_suplier'),
 				"spesifikasi"   => $this->input->post('spesifikasi'),
-				"lokasi"   => $this->input->post('lokasi'),
 				"kondisi"   => $this->input->post('kondisi'),
-				"sumber_dana"   => $this->input->post('sumber_dana'),
 				"jml_masuk"   => $this->input->post('jml_masuk'),
 			);
 

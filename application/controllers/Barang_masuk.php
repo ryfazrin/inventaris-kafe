@@ -13,8 +13,6 @@ class Barang_masuk extends CI_Controller
 		$this->load->model('barang_masuk_model');
 		// load barang_model
 		$this->load->model('barang_model');
-		// load suplier_model
-		$this->load->model('suplier_model');
 		// load login_model
 		$this->load->model('login_model');
 	}
@@ -51,7 +49,6 @@ class Barang_masuk extends CI_Controller
 		$data['level'] = $this->login_model->getLevel($uname);
 
 		$data['nama_barang'] = $this->barang_model->getData();
-		$data['nama_suplier'] = $this->suplier_model->getData();
 		$this->load->view('head');
 		$this->load->view('header');
 		$this->load->view('navigasi', $data);
@@ -65,7 +62,6 @@ class Barang_masuk extends CI_Controller
 		$data['level'] = $this->login_model->getLevel($uname);
 
 		$data['nama_barang'] = $this->barang_model->getData();
-		$data['nama_suplier'] = $this->suplier_model->getData();
 		$this->load->view('head');
 		$this->load->view('header');
 		$this->load->view('navigasi', $data);
@@ -90,7 +86,6 @@ class Barang_masuk extends CI_Controller
 		$uname = $this->session->userdata('username');
 		$data['level'] = $this->login_model->getLevel($uname);
 		$data['nama_barang'] = $this->barang_model->getData();
-		$data['nama_suplier'] = $this->suplier_model->getData();
 		$this->load->view('head');
 		$this->load->view('header');
 		$this->load->view('navigasi', $data);
@@ -106,7 +101,6 @@ class Barang_masuk extends CI_Controller
 		$data['level'] = $this->login_model->getLevel($uname);
 		$data['barang_masukId'] = $this->barang_masuk_model->getBarang_masukUpdate($id);
 		$data['barang'] = $this->barang_model->getData();
-		$data['suplier'] = $this->suplier_model->getData();
 		$data['sukses']  = '
 					<div class="alert alert-success"><p><strong>Update id Barang masuk '.$id.' Berhasil</strong></p></div>';
 		$this->load->view('head');

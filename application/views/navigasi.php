@@ -20,7 +20,6 @@
             <!-- level admin -->
             <?php if ($level->level == 'administrator'): ?>
               <li><a href="<?php echo site_url('user/'); ?>" class="nav-link"><i class="fas fa-user"></i><span>Data User</span></a></li>
-              <li><a class="nav-link" href="<?php echo site_url('suplier/'); ?>"><i class="fas fa-truck"></i> <span>Data Suplier</span></a></li>
               <!-- <li><a class="nav-link" href="<?php echo site_url('pinjam_barang/'); ?>"><i class="fas fa-book-open"></i> <span>Peminjaman Barang</span></a></li> -->
 
               <li class="menu-header"><b>Manajemen</b> Barang</li>

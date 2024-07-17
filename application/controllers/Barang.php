@@ -10,8 +10,6 @@ class Barang extends CI_Controller {
 		}
 		// load barang model
 		$this->load->model('barang_model');
-		// load suplier_model
-		$this->load->model('suplier_model');
 		// load login model
 		$this->load->model('login_model');
 	}
@@ -48,7 +46,6 @@ class Barang extends CI_Controller {
 		$this->barang_model->simpanBarang();
 		$data['barangId'] = $this->barang_model->getBarangByName($this->input->post('nama_barang'));
 		$data['nama_barang'] = $this->barang_model->getData();
-		$data['nama_suplier'] = $this->suplier_model->getData();
 		$this->load->view('head');
 		$this->load->view('header');
 		$this->load->view('navigasi', $data);

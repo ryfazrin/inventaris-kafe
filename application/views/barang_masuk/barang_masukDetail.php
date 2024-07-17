@@ -34,22 +34,10 @@
                         </div>
                       </div>
                       <div class="col-sm-6">
-  	                    <div class="form-group">
-  	                      <label>Suplier</label>
-  	                      <p><?= $data->nama_suplier ?></p>
-  	                    </div>
-                        <div class="form-group">
-                          <label>Lokasi</label>
-                          <p><?= $data->lokasi ?></p>
-                        </div>
                         <div class="form-group">
                           <label>Kondisi</label>
                           <p><?= $data->kondisi ?></p>
                         </div>
-  	                    <div class="form-group">
-  	                      <label>Sumber Dana</label>
-  	                      <p><?= $data->sumber_dana ?></p>
-  	                    </div>
                       </div>
                       <div class="col-sm-12">
                          <a href="<?php echo site_url('barang_masuk/ubah/'.$data->id_masuk);?>" data-toggle="tooltip"><button type="button" class="btn btn-primary">Edit <i class="fas fa-pencil-alt"></i></button></a>
