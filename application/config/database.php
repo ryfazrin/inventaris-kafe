@@ -79,6 +79,7 @@ $db['default'] = array(
 	'username' => env('DB_USERNAME'),
 	'password' => env('DB_PASSWORD'),
 	'database' => env('DATABASE'),
+	'port' => env('DB_PORT'),
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
